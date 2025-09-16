@@ -223,13 +223,42 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## 🤝 贡献指南
+## 🤝 团队协作
 
-1. Fork项目
-2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 打开Pull Request
+### 分支结构
+- **`main`** - 主分支，生产环境稳定代码
+- **`develop`** - 开发分支，日常开发主分支
+- **`feature/*`** - 功能分支，新功能开发
+- **`bugfix/*`** - 修复分支，问题修复
+
+### 开发流程
+1. **准备开发环境**
+   ```bash
+   git clone https://github.com/NewbieAuntieCodes/movies-react-app.git
+   cd movies-react-app
+   git checkout develop
+   ```
+
+2. **开始新功能**
+   ```bash
+   git checkout -b feature/你的功能名称
+   # 进行开发...
+   git commit -m "feat: 添加新功能描述"
+   git push -u origin feature/你的功能名称
+   ```
+
+3. **提交代码**
+   - 在GitHub创建Pull Request到`develop`分支
+   - 请求团队成员Review
+   - Review通过后合并
+
+4. **提交规范**
+   - `feat:` - 新功能
+   - `fix:` - 修复bug
+   - `docs:` - 文档更新
+   - `refactor:` - 代码重构
+
+详细协作指南请查看 [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## 📄 许可证
 
