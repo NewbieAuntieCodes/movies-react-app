@@ -13,7 +13,7 @@ cd movies-react-app
 # 2. 配置后端
 cd fastapi-backend
 cp .env.example .env
-# 编辑.env文件，将TMDB_API_KEY改为：be3849411a172c7f817c762b765ec656
+# 编辑.env文件，将TMDB_API_KEY改为实际密钥（联系项目负责人获取）
 
 # 3. 启动后端
 pip install -r requirements.txt
